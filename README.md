@@ -1,1 +1,1 @@
-control_repo
+Storing my test puppet code here!
