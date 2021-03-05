@@ -5,10 +5,8 @@ node 'master.puppet.vm' {
    file {'/root/README':
       ensure => file,
       content => "Welcome to ${fqdn}\n",
+   include role::minecraft_server   
    }
-}
-node 'master.puppet.vm' {
-   include role::minecraft_server
 }
 node /^web/ {
    include role::app_server
